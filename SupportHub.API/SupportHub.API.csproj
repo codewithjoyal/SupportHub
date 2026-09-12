@@ -17,6 +17,9 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Filters\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Middleware\" />
   </ItemGroup>
 
 </Project>

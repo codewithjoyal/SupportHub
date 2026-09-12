@@ -10,4 +10,12 @@
     <ProjectReference Include="..\SupportHub.Domain\SupportHub.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+
 </Project>

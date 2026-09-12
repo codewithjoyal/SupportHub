@@ -11,4 +11,11 @@
     <ProjectReference Include="..\SupportHub.Domain\SupportHub.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
+    <Folder Include="Configurations\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>
