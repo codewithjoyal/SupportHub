@@ -11,5 +11,10 @@ namespace SupportHub.Domain.Entities
         public TicketStatus Status { get; set; } = TicketStatus.Open;
         public TicketPriority Priority { get; set; } = TicketPriority.Medium;
         public int? AssignedAgentId { get; set; }
+        public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
+        public DateTimeOffset UpdatedAt { get; set; } = DateTimeOffset.UtcNow;
+        public DateTimeOffset? ClosedAt { get; set; }
+        public Customer Customer { get; set; } = null!;
+        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
     }
 }
