@@ -1,12 +1,11 @@
 ﻿namespace SupportHub.Domain.Entities
 {
-    public class Category
+    public class Role
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
         public bool IsActive { get; set; } = true;
         public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
-        public ICollection<Ticket> Tickets { get; set; } = new List<Ticket>();
+        public ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
     }
 }
