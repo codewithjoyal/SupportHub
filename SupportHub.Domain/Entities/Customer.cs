@@ -9,5 +9,6 @@
         public string? PhoneNumber { get; set; }
         public bool IsActive { get; set; } = true;
         public DateTimeOffset CreatedAt { get; set; }
+        public ICollection<Ticket> Tickets { get; set; } = new List<Ticket>();
     }
 }
